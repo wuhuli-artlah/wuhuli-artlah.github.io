@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wu Huli - StarCraft Links</title>
+    <style>
+        /* Simple base styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: #000;
+            color: #00a8ff;
+            font-family: monospace;
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        /* Container with Terran-style border */
+        .terminal {
+            width: 100%;
+            max-width: 500px;
+            background-color: #000a14;
+            border: 2px solid #00a8ff;
+            box-shadow: 0 0 10px rgba(0, 168, 255, 0.5);
+            padding: 25px;
+            position: relative;
+        }
+        
+        /* Minimal inner border */
+        .terminal::before {
+            content: "";
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            right: 5px;
+            bottom: 5px;
+            border: 1px solid #004080;
+            pointer-events: none;
+        }
+        
+        /* Header */
+        .header {
+            text-align: center;
+            margin-bottom: 25px;
+            border-bottom: 1px solid #004080;
+            padding-bottom: 15px;
+        }
+        
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            text-shadow: 0 0 5px #00a8ff;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            font-size: 12px;
+            color: #0066aa;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        /* Link container */
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        
+        /* Link buttons */
+        .link {
+            background-color: #001428;
+            border: 1px solid #00a8ff;
+            padding: 12px 15px;
+            text-decoration: none;
+            color: #00a8ff;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.2s ease;
+            position: relative;
+            font-size: 14px;
+            text-align: left;
+        }
+        
+        .link:hover {
+            background-color: #002a55;
+            box-shadow: 0 0 8px rgba(0, 168, 255, 0.7);
+        }
+        
+        .link:active {
+            background-color: #003a75;
+            transform: translateY(1px);
+        }
+        
+        /* Icon indicator */
+        .link::before {
+            content: ">";
+            display: inline-block;
+            margin-right: 10px;
+            color: #00a8ff;
+        }
+        
+        /* Footer */
+        .footer {
+            margin-top: 25px;
+            text-align: center;
+            color: #0066aa;
+            font-size: 12px;
+            border-top: 1px solid #004080;
+            padding-top: 15px;
+        }
+        
+        /* Simple scanning animation */
+        .scan-line {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #00a8ff, transparent);
+            animation: scan 2s linear infinite;
+            opacity: 0.5;
+        }
+        
+        @keyframes scan {
+            0% { top: 0; }
+            100% { top: 100%; }
+        }
+    </style>
+</head>
+<body>
+    <div class="terminal">
+        <div class="scan-line"></div>
+        
+        <div class="header">
+            <div class="title">WUHULI</div>
+            <div class="subtitle">Tactical Command Interface</div>
+        </div>
+        
+        <div class="links">
+            <a href="https://www.instagram.com/wuhuli.artlah/" class="link" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://www.redbubble.com/people/wuhu/shop?asc=u" class="link" target="_blank" rel="noopener noreferrer">Redbubble</a>
+            <a href="https://www.designbyhumans.com/shop/wuhuli/" class="link" target="_blank" rel="noopener noreferrer">DesignByHumans</a>
+            <a href="https://www.teepublic.com/user/wuhuli" class="link" target="_blank" rel="noopener noreferrer">TeePublic</a>
+            <a href="https://displate.com/artist/wuhuli?order=bestselling&sort=all&type=displates" class="link" target="_blank" rel="noopener noreferrer">Displate</a>
+            <a href="https://www.threadless.com/shop/@wuhuli" class="link" target="_blank" rel="noopener noreferrer">Threadless</a>
+        </div>
+        
+        <div class="footer">
+            TRANSMISSION SECURE • CONNECTION ESTABLISHED
+        </div>
+    </div>
+</body>
+</html>
